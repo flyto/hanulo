@@ -20,7 +20,7 @@ class _ProductManagerState extends State<ProductManager> {
         child: RaisedButton(
             onPressed: () {
               setState(() {
-                _products.add('Advanced Food Tester');
+                _products.add('Advanced Food Tester!!');
                 print(_products);
               });
             },
