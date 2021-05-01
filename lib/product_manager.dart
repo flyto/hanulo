@@ -17,7 +17,7 @@ class _ProductManagerState extends State<ProductManager> {
     return Column(children: [
       Container(
         margin: EdgeInsets.all(10.0), //margin
-        child: RaisedButton(
+        child: ElevatedButton(
             onPressed: () {
               setState(() {
                 _products.add('Advanced Food Tester!!');
