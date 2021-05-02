@@ -4,7 +4,7 @@ class Products extends StatelessWidget {
   final List<String> products;
 
   //생성자  -- koo
-  Products(this.products) {
+  Products([this.products = const[]]) {
     print('1:Products widget constructor');
   }
 
