@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './products.dart';
 import './product_control.dart';
 
+// ignore: must_be_immutable
 class ProductManager extends StatefulWidget {
   String startingProduct;
 
