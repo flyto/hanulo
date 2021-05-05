@@ -30,10 +30,9 @@ class MyHomePage extends StatelessWidget {
             colors : [Color.fromRGBO(195, 20, 50, 1),Color.fromRGBO(36, 11, 54, 1)]
           ),
         ),
-        child: Column(
-
-        )
       ),
     );
   }
+
+  
 }
