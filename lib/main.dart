@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flweb_third/LandingPage/LandingPage.dart';
 import 'package:flweb_third/Navbar/Navbar.dart';
 
 void main() {
@@ -28,11 +29,13 @@ class MyHomePage extends StatelessWidget {
           gradient : LinearGradient(
             begin : Alignment.centerLeft,
             end : Alignment.centerRight,
-            colors : [Color.fromRGBO(195, 20, 50, 1),Color.fromRGBO(36, 11, 54, 1)]
+            colors : [
+              Color.fromRGBO(195, 20, 50, 1),
+              Color.fromRGBO(36, 11, 54, 1)]
           ),
         ),
         child: Column(
-          children: <Widget>[Navbar()],
+          children: <Widget>[Navbar(), LandingPage()],
         ),
       ),
     );
