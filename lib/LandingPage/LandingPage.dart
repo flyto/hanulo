@@ -2,37 +2,45 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class LandingPage extends StatelessWidget {
-  List<Widget> pageChildren() {
+  List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
-          child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text("Website \nDeveloper",
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text("Website \nDeveloper",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
                   color: Colors.white)),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0),
-            child: Text(
+            Padding(
+             padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: Text(
                 "We have taken each and every project handed over to us as a challenge, which has helped us achived a high project success rate.",
                 style: TextStyle(fontSize: 16.0, color: Colors.white)),
-          ),
-          MaterialButton(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
+            ),
+            MaterialButton(
+             color: Colors.white,
+             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             onPressed: () {},
             child: Text(
               "Our Pakages",
               style: TextStyle(color: Colors.red),
-            )),
+            )
+          ),
         ],
-      ))
-    ];
-  }
+      )
+    ),
+    Image.asset(
+      "assets/images/lp_image.png",
+      width: width,
+      height: 400,
+    )
+  ];
+}
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +48,11 @@ class LandingPage extends StatelessWidget {
       if (constraints.maxWidth > 800) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: pageChildren(),
+          children: pageChildren(constraints.biggest.width/2),
         );
       } else {
         return Column(
-          children: pageChildren(),
+          children: pageChildren(constraints.biggest.width),
         );
       }
     });
