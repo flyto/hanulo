@@ -15,14 +15,14 @@ class LandingPage extends StatelessWidget {
                   fontSize: 40.0,
                   color: Colors.white)),
             Padding(
-             padding: const EdgeInsets.symmetric(vertical: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 "We have taken each and every project handed over to us as a challenge, which has helped us achived a high project success rate.",
                 style: TextStyle(fontSize: 16.0, color: Colors.white)),
             ),
             MaterialButton(
-             color: Colors.white,
-             shape: RoundedRectangleBorder(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             onPressed: () {},
@@ -34,10 +34,12 @@ class LandingPage extends StatelessWidget {
         ],
       )
     ),
-    Image.asset(
+    Padding(
+      padding: const EdgeInsets.symmetric(vertical: 40.0),
+      child: Image.asset(
       "assets/images/lp_image.png",
       width: width,
-      height: 400,
+    )
     )
   ];
 }

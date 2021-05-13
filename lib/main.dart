@@ -34,7 +34,8 @@ class MyHomePage extends StatelessWidget {
               Color.fromRGBO(36, 11, 54, 1)]
           ),
         ),
-        child: Column(
+        child: SingleChildScrollView( 
+          child: Column(
           children: <Widget>[
             Navbar(), 
             Padding(
@@ -44,6 +45,7 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
+      )
     );
   }
 }
