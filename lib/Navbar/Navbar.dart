@@ -34,7 +34,7 @@ class DesktopNavbar extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Text(
-                      'Home',
+                      'MyHome',
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(
